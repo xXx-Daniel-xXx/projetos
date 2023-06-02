@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
+}
+
+:root{
+    --color-primary: #F84646;
+    --fw-min: 400;
+    --fw-max: 800;
+    font-size: 62.5%;
+}
+
+.btn {
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    color: white;
+    font-weight: var(--fw-max);
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+
+.btn:hover {
+    transform: scale(0.9);
+    color: var(--color-primary);
+    background-color: white;
+    border: min(4px, 0.5vw) solid var(--color-primary);
+}
+
+body {
+    background: black;
+}
+
+header {
+    overflow-y: hidden;
+    width: 100%;
+    height: max(60vw, 201px);
+    background-image: url(Rectangle\ 1\ \(1\).jpg);
+    background-size: cover;
+    background-position: center center;
+}
+/*--------------------------------------------menu de navegação----------------------------------------------------------------------------------*/
+nav {
+    margin-top: 1vw;
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: max(4vw, 5vw);
+    align-items: center;
+    justify-content: end;
+    padding-right: 3vw;
+}
+
+nav ul {
+    margin-right: 18px;
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    align-items: center;
+}
+
+nav ul a,nav ul li{
+    font-size: 1.2vw;
+    font-weight: var(--fw-max);
+    text-decoration: none;
+    color: black;
+    border: none;
+    transition: 0.3s ease;
+}
+
+
+nav ul li:hover{
+    border-bottom: 0.2vw solid var(--color-primary);
+}
+
+nav ul a:hover {
+    color: white;
+}
+
+nav button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: max(0.9vw, 8px);
+    background-color: var(--color-primary);
+    font-weight: var(--fw-max);
+    padding: 0.9vw 2vw;
+}
+
+
+header section {
+    
+    display: flex;
+    flex-direction: column;
+    margin: 14% 9%;
+    width: 45%;
+    height: 50%;
+  
+}
+
+header h1 {
+    font-weight: var(--fw-max);
+    font-size: 3.2vw;
+}
+
+header p {
+    margin-top: 2%;
+    font-size: 1.5vw;
+}
+
+header label {
+    margin: auto 0 ;
+    width: 100%;
+    height: 6vw;
+    overflow: hidden;
+}
+
+#email {
+    font-size: 1.3vw;
+    padding: 5%;
+    height: 90%;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+   
+}
+
+.get {
+    position: relative;
+    left: 76%;
+    top: -80%;
+    align-self: end;
+    font-size: max(1.5vw, 8px);
+    padding: 1vw 2.5vw;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.part_two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+.part_two h3 {
+    margin-top: 7vw;
+    margin-bottom: 0;
+    font-size: max(2.5vw, 20px);
+}
+
+.descrition {
+    margin-top: 2.5vw;
+    width: 70vw;
+    font-size: max(1.5vw, 12px);
+    margin-bottom: 7vw;
+}
+
+aside {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+}
+
+aside article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    height: max(28vw, 211px);
+
+}
+
+article img {
+    width: max(5vw, 50px);
+    height: max(5vw, 50px);
+}
+
+article h5 {
+    margin-top: 1.5vw;
+    font-size: max(1.5vw, 1.6rem);
+}
+
+article p {
+    margin-top: 1vw;
+    width: max(20vw, 150px);
+    font-size: max(1.5vw, 1.5rem);
+}
+
+.part_three {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-primary);
+    padding: 7vw 8vw;
+}
+
+.part_three h4 {
+    margin-top: 4.5vw;
+    color: white;
+    font-weight: var(--fw-max);
+    font-size: max(3.5vw, 20px);
+}
+
+.part_three h6 {
+    margin-top: 1.5vw;
+    font-weight: 100;
+    font-size: max(1.3vw, 13px);
+    color: white;
+}
+
+.part_three-conteiner{
+    display: flex;
+    align-items: center;
+    margin-top: 5vw;
+    width: 100%;
+    gap: 1.7vw;
+}
+
+.part_three-conteiner p{
+    width: 100%;
+    color: white;
+    font-size: max(1.7vw, 18px);
+}
+
+/*d-------------------------------------------------------------sobre a empresa------------------------------------------------------------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 90vw;
+    padding: 11vw 10vw;
+    gap: max(3vw, 30px);
+}
+
+main section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.section_reverse {
+    flex-direction: row-reverse;
+}
+
+
+.main_div {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+}
+
+
+.main_div h3 {
+    font-size: 3vw;
+}
+
+.main_div p {
+    margin-top: min(2vw, 1px);
+    font-size: 1.5vw;
+}
+
+.main_div button {
+    margin: auto 0 0;
+    height: min(5vw, 40px);
+    width: min(20vw, 120px);
+    font-size: 1.2vw;
+    border-radius: 3px;
+    font-weight: 100;
+}
+
+.main_img {
+    height: 100%;
+    width: 45%;   
+}
+
+footer {
+    width: 100%;
+    height: 40vw;
+    background-color: var(--color-primary);
+    padding: 5vw;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    gap: 7vw;
+}
+
+.container ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    list-style: none;
+    gap: 1vw;
+}
+
+.container li {
+    height: 15vw;
+    line-height: 1vw;
+}
+
+.medium li {
+    height: 3vw;
+}
+
+.medium_mod li {
+    height: 2.5vw;
+}
+
+.container ul a {
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    transition: 0.3 ease;
+}
+
+.container ul a:hover{
+    opacity: 1;
+} 
+
+.title {
+    font-weight: var(--fw-max);
+    font-size: 1.5vw;
+    
+}
+
+.container p {
+    display: flex;
+    align-items: end;
+    height: 100%;
+    font-size: 1.3vw;
+    justify-self: end;
+}
+
+.contact {
+    display: none;
+}
+
+
+@media screen and (max-width: 430px){
+    
+    header {
+        height: 300px;
+    }
+
+    header h1 {
+        font-size: 6.3vw;
+    }
+
+    header p {
+        font-size: 3vw;
+    }
+
+    li a  {
+        display: none;
+    }
+
+    header section {
+        margin: auto;
+        height: auto;
+    
+        text-align: center;
+        width: 80%;
+    }
+
+     header label {
+        margin-top: 4vw;
+        height: 10vw;
+     }
+
+     #email {
+        font-size: 3vw;
+     }
+
+    .get {
+        top: -70%;
+        left: 40%;
+    }
+
+    .part_three {
+        height: 440px;
+    }
+
+    .part_three-conteiner {
+        margin-top: 10vw;
+        gap: 10vw;
+        flex-direction: column;
+    }
+
+    main {
+        padding: 11vw 10px;
+        height: 1100px;
+    }
+
+    main section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section_reverse {
+        flex-direction: column;
+    }
+
+    .main_div {
+        text-align: center;
+        align-items: center;
+        width: 95%;
+    }
+
+    .main_div button {
+        height: 25px;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .main_div h3 {
+        margin-top: 4vw;
+        font-size: 24px;
+        line-height: 30px;
+        overflow-y: hidden;
+    }
+
+    .main_div p {
+        font-size: 12px;
+    }
+
+    .main_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container{
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact{
+       
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+    }
+
+    .contact a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .contact a:hover {
+        transform: scale(1.1);
+    }
+}
+
